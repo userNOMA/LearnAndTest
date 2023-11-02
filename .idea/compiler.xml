@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="NatDayDemo" />
         <module name="JavaCore" />
+        <module name="WorkResearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="JavaCore" target="1.5" />
       <module name="NatDayDemo" target="11" />
+      <module name="WorkResearch" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

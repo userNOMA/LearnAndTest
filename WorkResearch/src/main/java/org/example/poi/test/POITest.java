@@ -7,10 +7,7 @@ import java.util.List;
 
 import org.apache.poi.ooxml.POIXMLProperties;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.apache.poi.xwpf.usermodel.XWPFRun;
-import org.apache.poi.xwpf.usermodel.XWPFTable;
+import org.apache.poi.xwpf.usermodel.*;
 
 /**
  * @author zhouxs-a
@@ -24,7 +21,39 @@ public class POITest {
 //        PrintDocxAllText(docFilePath);
 //        PrintRunFormat(docFilePath);
 //        CompareParagraphAndRun(docFilePath);
-        PrintTables(docFilePath);
+//        PrintTables(docFilePath);
+//        PrintRunPictureData(docFilePath);
+    }
+
+    /**
+     * @description: 打印每个run当中的图片信息
+     * @Param filePath: docx文件路径
+     * @return: void
+     * @author zhouxs-a
+     * @date 2023/11/3 9:47
+     */
+    private static void PrintRunPictureData(String filePath) {
+
+        try (FileInputStream fis = new FileInputStream(filePath)) {
+            // 打开Word文件
+            XWPFDocument doc = new XWPFDocument(fis);
+            // 打印doc文本内容的同时获取文本的格式
+            List<XWPFParagraph> paragraphs = doc.getParagraphs();
+            for (XWPFParagraph paragraph : paragraphs) {
+                // 打印文本内容，不包含表格中的内容
+                System.out.println(paragraph.getText());
+                List<XWPFRun> runs = paragraph.getRuns();
+                for (XWPFRun run : runs ) {
+                    for (XWPFPicture picture : run.getEmbeddedPictures()) {
+                        System.out.println(picture.getWidth());
+                    }
+                }
+                System.out.println();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     /**

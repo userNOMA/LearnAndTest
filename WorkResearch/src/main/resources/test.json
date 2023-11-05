@@ -1,0 +1,220 @@
+{
+  "basicInfo": {
+    "name": "广联达一期工程",
+    "importTime": "2023年10月12日23时16分",
+    "exportTime": "2023年10月12日23时16分",
+    "vbpVersion": "6.0.9900.78",
+    "tendererCount": "4",
+    "checkCount": "3",
+    "basicInfoTable": [
+      {
+        "tendererNo": "1",
+        "tendererName": "投标文件A",
+        "amount": "54,488,272.81"
+      },
+      {
+        "tendererNo": "2",
+        "tendererName": "投标文件B",
+        "amount": "62,225,701.18"
+      },
+      {
+        "tendererNo": "3",
+        "tendererName": "投标文件C",
+        "amount": "63,117,112.68"
+      },
+      {
+        "tendererNo": "4",
+        "tendererName": "投标文件D",
+        "amount": "63,824,459.54"
+      }
+    ]
+  },
+  "matchCheckResult": {
+    "differenceTendererCount": "0",
+    "sameTendererCount": "4",
+    "machCheckTable": [
+      {
+        "tendererNo": "1",
+        "tendererName": "投标文件A",
+        "addItemCount": "5",
+        "deleteItemCount": "5",
+        "totalCount": "16",
+        "amount": "16"
+      },
+      {
+        "tendererNo": "2",
+        "tendererName": "投标文件B",
+        "addItemCount": "0",
+        "deleteItemCount": "0",
+        "totalCount": "2",
+        "amount": "2"
+      },
+      {
+        "tendererNo": "3",
+        "tendererName": "投标文件C",
+        "addItemCount": "1",
+        "deleteItemCount": "1",
+        "totalCount": "4",
+        "amount": "4"
+      },
+      {
+        "tendererNo": "4",
+        "tendererName": "投标文件D",
+        "addItemCount": "0",
+        "deleteItemCount": "0",
+        "totalCount": "2",
+        "amount": "2"
+      }
+    ],
+    "attachmentList": [
+      {
+        "2": "清标结果_符合性检查结果_符合性检查结果汇总表"
+      },
+      {
+        "3": "清标结果_符合性检查结果_分部分项工程量清单表"
+      }
+    ]
+  },
+  "calcCheckResult": {
+    "errorTendererCount": "2",
+    "correctTendererCount": "2",
+    "machCheckTable": [
+      {
+        "tendererNo": "1",
+        "tendererName": "投标文件A",
+        "errorItemCount": "2"
+      },
+      {
+        "tendererNo": "2",
+        "tendererName": "投标文件B",
+        "errorItemCount": "0"
+      },
+      {
+        "tendererNo": "3",
+        "tendererName": "投标文件C",
+        "errorItemCount": "1"
+      },
+      {
+        "tendererNo": "4",
+        "tendererName": "投标文件D",
+        "errorItemCount": "0"
+      }
+    ],
+    "attachmentList": [
+      {
+        "4": "清标结果_计算性检查结果_计算性检查结果汇总表"
+      },
+      {
+        "5": "清标结果_计算性检查结果_单价为0或负"
+      },
+      {
+        "6": "清标结果_计算性检查结果_合价≠单价*数量"
+      }
+    ]
+  },
+  "hardwareCheckResult": {
+    "hardwareCheckList": {
+      "ZZ321117759": [
+        "投标文件A",
+        "投标文件C"
+      ]
+    },
+    "machCheckTable": [
+      {
+        "tendererNo": "1",
+        "tendererName": "投标文件A",
+        "dogInfoVOS": [
+          "ZZ321117759",
+          "ZZ321117759"
+        ],
+        "macAddrVOS": [
+          "E4-0E-EE-83-56-5C"
+        ]
+      },
+      {
+        "tendererNo": "2",
+        "tendererName": "投标文件B",
+        "dogInfoVOS": [
+          "ZZ321120519"
+        ],
+        "macAddrVOS": [
+          "E4-0E-EE-83-56-5C"
+        ]
+      },
+      {
+        "tendererNo": "3",
+        "tendererName": "投标文件C",
+        "dogInfoVOS": [
+          "ZZ321117759"
+        ],
+        "macAddrVOS": [
+          "8C-16-45-5C-C9-D4"
+        ]
+      },
+      {
+        "tendererNo": "4",
+        "tendererName": "投标文件D",
+        "dogInfoVOS": [
+          "ZZ321122009"
+        ],
+        "macAddrVOS": [
+          "B4-2E-99-77-05-17"
+        ]
+      }
+    ],
+    "tendereeInclude": true
+  },
+  "attachment": {
+    "attachment": [
+      {
+        "attachmentNo": "1",
+        "attachmentName": "清标结果_清标结果汇总_清标结果汇总表"
+      },
+      {
+        "attachmentNo": "2",
+        "attachmentName": "清标结果_符合性检查结果_符合性检查结果汇总表"
+      },
+      {
+        "attachmentNo": "3",
+        "attachmentName": "清标结果_符合性检查结果_分部分项工程量清单表"
+      },
+      {
+        "attachmentNo": "4",
+        "attachmentName": "清标结果_计算性检查结果_计算性检查结果汇总表"
+      },
+      {
+        "attachmentNo": "5",
+        "attachmentName": "清标结果_计算性检查结果_单价为0或负"
+      },
+      {
+        "attachmentNo": "6",
+        "attachmentName": "清标结果_计算性检查结果_合价≠单价*数量"
+      },
+      {
+        "attachmentNo": "7",
+        "attachmentName": "不平衡报价_评审_不平衡报价汇总表"
+      },
+      {
+        "attachmentNo": "8",
+        "attachmentName": "不平衡报价_评审_投标总价对比表"
+      },
+      {
+        "attachmentNo": "9",
+        "attachmentName": "不平衡报价_评审_分部分项清单单价分析表"
+      },
+      {
+        "attachmentNo": "10",
+        "attachmentName": "不平衡报价_比价_分部分项工程量清单对比表"
+      },
+      {
+        "attachmentNo": "11",
+        "attachmentName": "规律性分析_硬件信息检查结果表"
+      },
+      {
+        "attachmentNo": "12",
+        "attachmentName": "规律性分析_错误一致性分析表"
+      }
+    ]
+  }
+}
+

@@ -18,7 +18,6 @@ import java.util.regex.Pattern;
  * @date 2023/11/3 12:43
  */
 public class WordUtils {
-    private static List<LinkedHashMap <String, Object>> report_outline = new ArrayList<>();
     private static int basicInfoPointer;
     private static final String BASIC_INFO_TITLE = "清标报告";
     private static int matchCheckPointer;
@@ -41,20 +40,7 @@ public class WordUtils {
      * @author zhouxs-a
      * @date 2023/11/3 15:45
      */
-    public WordUtils() {
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "清标报告", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "一、经清标软件检查，符合性检查结果：", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "二、经清标软件检查，计算性检查结果：", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "三、经清标软件检查，软硬件信息检查结果：", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "四、附件", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-        report_outline.add(new LinkedHashMap<>(Map.of("title", "五、签字栏：", "find", false,
-                "paragraphsPointer", -1, "tablePointer", -1)));
-    }
+    public WordUtils() {}
 
     /**
      * @description: 按照预期格式读取清标报告
@@ -71,11 +57,6 @@ public class WordUtils {
         clearReport.put("calcCheckResult", ReadCalcCheckResult());
         clearReport.put("hardwareCheckResult", ReadHardwareCheckResult());
         clearReport.put("attachment", ReadAttachment());
-        System.out.println(clearReport.get("basicInfo"));
-        System.out.println(clearReport.get("matchCheckResult"));
-        System.out.println(clearReport.get("calcCheckResult"));
-        System.out.println(clearReport.get("hardwareCheckResult"));
-        System.out.println(clearReport.get("attachment"));
         return clearReport;
     }
 
@@ -94,7 +75,6 @@ public class WordUtils {
         ArrayList <LinkedHashMap> attachmentList = new ArrayList<>();
         for (int i = 0; i < paragraphCount - 2; i++) {
             LinkedHashMap <String, String> attachmentRow = new LinkedHashMap<>();
-            System.out.println(paragraphs.get(attachmentPointer + i).getText());
             matcher = pattern.matcher(paragraphs.get(attachmentPointer + i).getText());
             if (matcher.find()) {
                 attachmentRow.put("attachmentNo", matcher.group(1));
@@ -156,7 +136,7 @@ public class WordUtils {
         }
         hardwareCheck.put("machCheckTable", hardwareCheckTable);
 
-        if (paragraphs.get(hardwarePointer + paragraphCount - 3).getText().contains("“不参与”")) {
+        if (paragraphs.get(hardwarePointer + paragraphCount - 3).getText().contains("不参与")) {
             hardwareCheck.put("tendereeInclude", false);
         }
         else {
@@ -183,7 +163,6 @@ public class WordUtils {
         } else {
             hardwareCheck.put("attachmentList", null);
         }
-
         return hardwareCheck;
     }
 

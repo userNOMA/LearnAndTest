@@ -13,9 +13,11 @@ import java.util.LinkedHashMap;
  */
 public class Main {
     public static void main(String[] args) {
-        String docxPath = "WorkResearch/src/main/resources/清标报告.docx";
+        String docxPath = "WorkResearch/src/main/resources/清标报告1.docx";
         LinkedHashMap<String, Object> clearReport = WordUtils.ReadClearReport(docxPath);
         System.out.println(clearReport);
         System.out.println(JSON.toJSONString(clearReport, SerializerFeature.SortField,  SerializerFeature.PrettyFormat));
+
+
     }
 }

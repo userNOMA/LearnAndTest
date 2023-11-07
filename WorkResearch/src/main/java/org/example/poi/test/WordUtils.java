@@ -28,7 +28,10 @@ public class WordUtils {
     private static final String HARDWARE_TITLE = "三、经清标软件检查，软硬件信息检查结果：";
     private static int attachmentPointer;
     private static final String ATTACHMENT_TITLE = "四、附件";
+    private static final String ATTACHMENT_TITLE_1 = "三、附件";
     private static final String SIGNATURE_TITLE = "五、签字栏：";
+    private static final String SIGNATURE_TITLE_1 = "四、签字栏：";
+    private static boolean hasHardware = true;
     private static int signaturePointer;
     private static List<XWPFParagraph> paragraphs;
     private static List<XWPFTable> tables;
@@ -68,6 +71,9 @@ public class WordUtils {
      */
     private static LinkedHashMap ReadAttachment() {
         LinkedHashMap<String, Object> attachmentCheck = new LinkedHashMap<>();
+        if (attachmentPointer == 0) {
+            attachmentCheck.put("attachment", null);
+        }
         int paragraphCount = signaturePointer - attachmentPointer;
         String regex = "(.*?)、《(.*)》";
         Pattern pattern = Pattern.compile(regex);
@@ -94,6 +100,10 @@ public class WordUtils {
      */
     private static LinkedHashMap ReadHardwareCheckResult() {
         LinkedHashMap<String, Object> hardwareCheck = new LinkedHashMap<>();
+        if (hardwarePointer == 0) {
+            return hardwareCheck;
+        }
+
         int paragraphCount = attachmentPointer - hardwarePointer;
 
         String regex = "其中投标单位（(.*?)）电子版投标文件出现相同加密锁的信息（(.*?)）。";
@@ -174,7 +184,9 @@ public class WordUtils {
      */
     private static LinkedHashMap ReadCalcCheckResult() {
         LinkedHashMap<String, Object> calcCheck = new LinkedHashMap<>();
-
+        if (calcCheckPointer == 0) {
+            return calcCheck;
+        }
         String regex = "计算性检查中(.*?)家单位无计算逻辑错误，(.*?)家有错误";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(paragraphs.get(calcCheckPointer).getText());
@@ -234,6 +246,9 @@ public class WordUtils {
      */
     private static LinkedHashMap<String, Object> ReadMatchCheckResult() {
         LinkedHashMap<String, Object> matchCheck = new LinkedHashMap<>();
+        if (matchCheckPointer == 0){
+            return matchCheck;
+        }
 
         String regex = "符合性检查中(.*?)家单位.*均一致，(.*?)家不一致";
         Pattern pattern = Pattern.compile(regex);
@@ -296,6 +311,9 @@ public class WordUtils {
      */
     private static LinkedHashMap<String, Object> ReadBasicInfo() {
         LinkedHashMap<String, Object> basicInfo = new LinkedHashMap<>();
+        if (basicInfoPointer == 0){
+            return basicInfo;
+        }
 
         String regex = "项目名称：(.*)";
         Pattern pattern = Pattern.compile(regex);
@@ -380,10 +398,14 @@ public class WordUtils {
                         hardwarePointer = i + 1;
                         break;
                     case ATTACHMENT_TITLE:
+                    case ATTACHMENT_TITLE_1:
                         attachmentPointer = i + 1;
+                        hasHardware = false;
                         break;
+                    case SIGNATURE_TITLE_1:
                     case SIGNATURE_TITLE:
                         signaturePointer = i + 1;
+                        hasHardware = false;
                         break;
                     default:
                         break;
@@ -402,14 +424,20 @@ public class WordUtils {
         if (calcCheckPointer == 0) {
             Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, CALC_CHECK_TITLE));
         }
-        if (hardwarePointer == 0) {
+        if (hardwarePointer == 0 && hasHardware) {
             Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, HARDWARE_TITLE));
         }
-        if (attachmentPointer == 0) {
+        if (attachmentPointer == 0 && hasHardware) {
             Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, ATTACHMENT_TITLE));
         }
-        if (signaturePointer == 0) {
+        if (attachmentPointer == 0 && !hasHardware) {
+            Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, ATTACHMENT_TITLE_1));
+        }
+        if (signaturePointer == 0 && hasHardware) {
             Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, SIGNATURE_TITLE));
+        }
+        if (signaturePointer == 0  && !hasHardware) {
+            Assert.fail(String.format("文件：%s，缺少内容：%s！", docxName, SIGNATURE_TITLE_1));
         }
     }
 }

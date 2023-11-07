@@ -144,7 +144,7 @@ public class WordUtils {
             tableRow.put("macAddrVOS", macAddrVOSList);
             hardwareCheckTable.add(tableRow);
         }
-        hardwareCheck.put("machCheckTable", hardwareCheckTable);
+        hardwareCheck.put("hardwareCheckTable", hardwareCheckTable);
 
         if (paragraphs.get(hardwarePointer + paragraphCount - 3).getText().contains("不参与")) {
             hardwareCheck.put("tendereeInclude", false);
@@ -335,17 +335,17 @@ public class WordUtils {
             basicInfo.put("exportTime", null);
         }
 
-        regex = "清标产品(.*?)版本生成，共检查(.*?)家投标标.*检查(.*?)个部分";
+        regex = "共检查(.*?)家投标标.*检查(.*?)个部分.*为第(.*?)轮清标";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(paragraphs.get(basicInfoPointer + 2).getText());
         if (matcher.find()) {
-            basicInfo.put("vbpVersion", matcher.group(1));
-            basicInfo.put("tendererCount", matcher.group(2));
-            basicInfo.put("checkCount", matcher.group(3));
+            basicInfo.put("tendererCount", matcher.group(1));
+            basicInfo.put("checkCount", matcher.group(2));
+            basicInfo.put("multiRound", matcher.group(3));
         } else {
-            basicInfo.put("vbpVersion", null);
             basicInfo.put("tendererCount", null);
             basicInfo.put("checkCount", null);
+            basicInfo.put("multiRound", null);
         }
 
         XWPFTable table = tables.get(0);

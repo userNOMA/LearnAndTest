@@ -55,11 +55,11 @@ public class WordUtils {
     public static LinkedHashMap<String, Object> ReadClearReport(String docxPath) {
         init(docxPath);
         LinkedHashMap<String, Object> clearReport = new LinkedHashMap<>();
-        clearReport.put("basicInfo", ReadBasicInfo());
-        clearReport.put("matchCheckResult", ReadMatchCheckResult());
-        clearReport.put("calcCheckResult", ReadCalcCheckResult());
-        clearReport.put("hardwareCheckResult", ReadHardwareCheckResult());
-        clearReport.put("attachment", ReadAttachment());
+        clearReport.put("basicInfo:清标信息", ReadBasicInfo());
+        clearReport.put("matchCheckResult:符合性检查结果", ReadMatchCheckResult());
+        clearReport.put("calcCheckResult:计算性检查结果", ReadCalcCheckResult());
+        clearReport.put("hardwareCheckResult:软硬件检查结果", ReadHardwareCheckResult());
+        clearReport.putAll(ReadAttachment());
         return clearReport;
     }
 
@@ -72,7 +72,7 @@ public class WordUtils {
     private static LinkedHashMap ReadAttachment() {
         LinkedHashMap<String, Object> attachmentCheck = new LinkedHashMap<>();
         if (attachmentPointer == 0) {
-            attachmentCheck.put("attachment", null);
+            attachmentCheck.put("attachment:附件", null);
         }
         int paragraphCount = signaturePointer - attachmentPointer;
         String regex = "(.*?)、《(.*)》";
@@ -83,12 +83,12 @@ public class WordUtils {
             LinkedHashMap <String, String> attachmentRow = new LinkedHashMap<>();
             matcher = pattern.matcher(paragraphs.get(attachmentPointer + i).getText());
             if (matcher.find()) {
-                attachmentRow.put("attachmentNo", matcher.group(1));
-                attachmentRow.put("attachmentName", matcher.group(2));
+                attachmentRow.put("attachmentNo:附件编号", matcher.group(1));
+                attachmentRow.put("attachmentName:附件名称", matcher.group(2));
             }
             attachmentList.add(attachmentRow);
         }
-        attachmentCheck.put("attachment", attachmentList);
+        attachmentCheck.put("attachment:附件", attachmentList);
         return attachmentCheck;
     }
 
@@ -109,17 +109,20 @@ public class WordUtils {
         String regex = "其中投标单位（(.*?)）电子版投标文件出现相同加密锁的信息（(.*?)）。";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher;
-        LinkedHashMap<String, List> hardwareCheckList = new LinkedHashMap<>();
-        for (int i = 0; i < paragraphCount - 4; i++) {
+        List<LinkedHashMap<String, String>> hardwareCheckList = new ArrayList<>();
+        for (int i = 0; i < paragraphCount - 3; i++) {
             if ("".equals(paragraphs.get(hardwarePointer + i).getText())) {
                 continue;
             }
+            LinkedHashMap<String, String> tab = new LinkedHashMap<>();
             matcher = pattern.matcher(paragraphs.get(hardwarePointer + i).getText());
             if (matcher.find()) {
-                hardwareCheckList.put(matcher.group(2), Arrays.asList(matcher.group(1).split("；")));
+                tab.put("dogInfoVOS:相同加密锁号",matcher.group(2));
+                tab.put("tendererName:对应的投标单位",matcher.group(1));
             }
+            hardwareCheckList.add(tab);
         }
-        hardwareCheck.put("hardwareCheckList", hardwareCheckList);
+        hardwareCheck.put("hardwareCheckList:软硬件信息检查结论", hardwareCheckList);
 
         XWPFTable table = tables.get(3);
         List<LinkedHashMap<String, Object>> hardwareCheckTable = new ArrayList<>();
@@ -127,30 +130,30 @@ public class WordUtils {
             LinkedHashMap<String, Object> tableRow = new LinkedHashMap<>();
             String number = table.getRow(i).getCell(0).getParagraphs().get(0).getNumLevelText();
             if ("%1".equals(number)) {
-                tableRow.put("tendererNo", String.valueOf(i));
+                tableRow.put("tendererNo:序号", String.valueOf(i));
             } else {
                 Assert.fail(String.format("文件：%s，硬件信息检查表，序号有误！", docxName));
             }
-            tableRow.put("tendererName", table.getRow(i).getCell(1).getText());
+            tableRow.put("tendererName:单位名称", table.getRow(i).getCell(1).getText());
             ArrayList dogInfoVOSList = new ArrayList();
             for (XWPFParagraph par : table.getRow(i).getCell(2).getParagraphs()) {
                 dogInfoVOSList.add(par.getText());
             }
-            tableRow.put("dogInfoVOS", dogInfoVOSList);
+            tableRow.put("dogInfoVOS:加密锁号", String.join("；",dogInfoVOSList));
             ArrayList macAddrVOSList = new ArrayList();
             for (XWPFParagraph par : table.getRow(i).getCell(3).getParagraphs()) {
                 macAddrVOSList.add(par.getText());
             }
-            tableRow.put("macAddrVOS", macAddrVOSList);
+            tableRow.put("macAddrVOS:物理地址", String.join("；",macAddrVOSList));
             hardwareCheckTable.add(tableRow);
         }
-        hardwareCheck.put("hardwareCheckTable", hardwareCheckTable);
+        hardwareCheck.put("hardwareCheckTable:硬件信息检查汇总表", hardwareCheckTable);
 
         if (paragraphs.get(hardwarePointer + paragraphCount - 3).getText().contains("不参与")) {
-            hardwareCheck.put("tendereeInclude", false);
+            hardwareCheck.put("tendereeInclude:包含招标控制价", false);
         }
         else {
-            hardwareCheck.put("tendereeInclude", true);
+            hardwareCheck.put("tendereeInclude:包含招标控制价", true);
         }
 
         regex = "详见附表(.*)。";
@@ -165,13 +168,14 @@ public class WordUtils {
                 Pattern pat = Pattern.compile(reg);
                 Matcher mat = pat.matcher(tableName[i]);
                 if (mat.find()) {
-                    tab.put(mat.group(1), mat.group(2));
+                    tab.put("attachmentNo:附件编号", mat.group(1));
+                    tab.put("attachmentName:附件名称", mat.group(2));
                 }
                 attachmentList.add(tab);
             }
-            hardwareCheck.put("attachmentList", attachmentList);
+            hardwareCheck.put("attachmentList:符合性检查附件", attachmentList);
         } else {
-            hardwareCheck.put("attachmentList", null);
+            hardwareCheck.put("attachmentList:符合性检查附件", null);
         }
         return hardwareCheck;
     }
@@ -191,11 +195,11 @@ public class WordUtils {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(paragraphs.get(calcCheckPointer).getText());
         if (matcher.find()) {
-            calcCheck.put("errorTendererCount", matcher.group(1));
-            calcCheck.put("correctTendererCount", matcher.group(2));
+            calcCheck.put("errorTendererCount:计算性错误单位数量", matcher.group(1));
+            calcCheck.put("correctTendererCount:计算性正确单位数量", matcher.group(2));
         } else {
-            calcCheck.put("errorTendererCount", null);
-            calcCheck.put("correctTendererCount", null);
+            calcCheck.put("errorTendererCount:计算性错误单位数量", null);
+            calcCheck.put("correctTendererCount:计算性正确单位数量", null);
         }
 
         XWPFTable table = tables.get(2);
@@ -204,15 +208,15 @@ public class WordUtils {
             LinkedHashMap<String, String> tableRow = new LinkedHashMap<>();
             String number = table.getRow(i).getCell(0).getParagraphs().get(0).getNumLevelText();
             if ("%1".equals(number)) {
-                tableRow.put("tendererNo", String.valueOf(i));
+                tableRow.put("tendererNo:序号", String.valueOf(i));
             } else {
                 Assert.fail(String.format("文件：%s，计算性检查表，序号有误！", docxName));
             }
-            tableRow.put("tendererName", table.getRow(i).getCell(1).getText());
-            tableRow.put("errorItemCount", table.getRow(i).getCell(2).getText());
+            tableRow.put("tendererName:单位名称", table.getRow(i).getCell(1).getText());
+            tableRow.put("errorItemCount:错误数量", table.getRow(i).getCell(2).getText());
             calcCheckTable.add(tableRow);
         }
-        calcCheck.put("machCheckTable", calcCheckTable);
+        calcCheck.put("calcCheckTable:计算性统计表", calcCheckTable);
 
         regex = "详见附表(.*)。";
         pattern = Pattern.compile(regex);
@@ -226,13 +230,14 @@ public class WordUtils {
                 Pattern pat = Pattern.compile(reg);
                 Matcher mat = pat.matcher(tableName[i]);
                 if (mat.find()) {
-                    tab.put(mat.group(1), mat.group(2));
+                    tab.put("attachmentNo:附件编号", mat.group(1));
+                    tab.put("attachmentName:附件名称", mat.group(2));
                 }
                 attachmentList.add(tab);
             }
-            calcCheck.put("attachmentList", attachmentList);
+            calcCheck.put("attachmentList:计算性附件", attachmentList);
         } else {
-            calcCheck.put("attachmentList", null);
+            calcCheck.put("attachmentList:计算性附件", null);
         }
 
         return calcCheck;
@@ -254,11 +259,11 @@ public class WordUtils {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(paragraphs.get(matchCheckPointer).getText());
         if (matcher.find()) {
-            matchCheck.put("differenceTendererCount", matcher.group(1));
-            matchCheck.put("sameTendererCount", matcher.group(2));
+            matchCheck.put("sameTendererCount:符合性一致单位数量", matcher.group(1));
+            matchCheck.put("differenceTendererCount:符合性不一致单位数量", matcher.group(2));
         } else {
-            matchCheck.put("differenceTendererCount", null);
-            matchCheck.put("sameTendererCount", null);
+            matchCheck.put("differenceTendererCount:符合性一致单位数量", null);
+            matchCheck.put("sameTendererCount:符合性不一致单位数量", null);
         }
 
         XWPFTable table = tables.get(1);
@@ -267,18 +272,18 @@ public class WordUtils {
             LinkedHashMap<String, String> tableRow = new LinkedHashMap<>();
             String number = table.getRow(i).getCell(0).getParagraphs().get(0).getNumLevelText();
             if ("%1".equals(number)) {
-                tableRow.put("tendererNo", String.valueOf(i));
+                tableRow.put("tendererNo:序号", String.valueOf(i));
             } else {
                 Assert.fail(String.format("文件：%s，符合性检查表，序号有误！", docxName));
             }
-            tableRow.put("tendererName", table.getRow(i).getCell(1).getText());
-            tableRow.put("addItemCount", table.getRow(i).getCell(2).getText());
-            tableRow.put("deleteItemCount", table.getRow(i).getCell(3).getText());
-            tableRow.put("totalCount", table.getRow(i).getCell(4).getText());
-            tableRow.put("amount", table.getRow(i).getCell(4).getText());
+            tableRow.put("tendererName:单位名称", table.getRow(i).getCell(1).getText());
+            tableRow.put("addItemCount:增项", table.getRow(i).getCell(2).getText());
+            tableRow.put("deleteItemCount:缺项", table.getRow(i).getCell(3).getText());
+            tableRow.put("errorCount:错项", table.getRow(i).getCell(4).getText());
+            tableRow.put("totalCount:合计", table.getRow(i).getCell(5).getText());
             machCheckTable.add(tableRow);
         }
-        matchCheck.put("machCheckTable", machCheckTable);
+        matchCheck.put("machCheckTable:符合性统计表", machCheckTable);
 
         regex = "详见附表(.*)。";
         pattern = Pattern.compile(regex);
@@ -292,13 +297,14 @@ public class WordUtils {
                 Pattern pat = Pattern.compile(reg);
                 Matcher mat = pat.matcher(tableName[i]);
                 if (mat.find()) {
-                    tab.put(mat.group(1), mat.group(2));
+                    tab.put("attachmentNo:附件编号", mat.group(1));
+                    tab.put("attachmentName:附件名称", mat.group(2));
                 }
                 attachmentList.add(tab);
             }
-            matchCheck.put("attachmentList", attachmentList);
+            matchCheck.put("attachmentList:符合性附件", attachmentList);
         } else {
-            matchCheck.put("attachmentList", null);
+            matchCheck.put("attachmentList:符合性附件", null);
         }
         return matchCheck;
     }
@@ -319,33 +325,33 @@ public class WordUtils {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(paragraphs.get(basicInfoPointer).getText());
         if (matcher.find()) {
-            basicInfo.put("name", matcher.group(1));
+            basicInfo.put("name:项目名称", matcher.group(1));
         } else {
-            basicInfo.put("name", null);
+            basicInfo.put("name:项目名称", null);
         }
 
-        regex = "于(.*?)导入，并于(.*?)生成报告";
+        regex = "于(.*?)导入，并于(.*?)生成报告。";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(paragraphs.get(basicInfoPointer + 1).getText());
         if (matcher.find()) {
-            basicInfo.put("importTime", matcher.group(1));
-            basicInfo.put("exportTime", matcher.group(1));
+            basicInfo.put("importTime:导入时间", matcher.group(1));
+//            basicInfo.put("exportTime:报告生成时间", matcher.group(2));
         } else {
-            basicInfo.put("importTime", null);
-            basicInfo.put("exportTime", null);
+            basicInfo.put("importTime:导入时间", null);
+//            basicInfo.put("exportTime:报告生成时间", null);
         }
 
-        regex = "共检查(.*?)家投标标.*检查(.*?)个部分.*为第(.*?)轮清标";
+        regex = "共检查(.*?)家投标标书.*检查(.*?)个部分.*为第(.*?)轮清标";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(paragraphs.get(basicInfoPointer + 2).getText());
         if (matcher.find()) {
-            basicInfo.put("tendererCount", matcher.group(1));
-            basicInfo.put("checkCount", matcher.group(2));
-            basicInfo.put("multiRound", matcher.group(3));
+            basicInfo.put("tendererCount:标书数量", matcher.group(1));
+            basicInfo.put("checkCount:检查部分数量", matcher.group(2));
+            basicInfo.put("validBidRound:报告轮次", matcher.group(3));
         } else {
-            basicInfo.put("tendererCount", null);
-            basicInfo.put("checkCount", null);
-            basicInfo.put("multiRound", null);
+            basicInfo.put("tendererCount:标书数量", null);
+            basicInfo.put("checkCount:检查部分数量", null);
+            basicInfo.put("validBidRound:报告轮次", null);
         }
 
         XWPFTable table = tables.get(0);
@@ -354,15 +360,15 @@ public class WordUtils {
             LinkedHashMap<String, String> tableRow = new LinkedHashMap<>();
             String number = table.getRow(i).getCell(0).getParagraphs().get(0).getNumLevelText();
             if ("%1".equals(number)) {
-                tableRow.put("tendererNo", String.valueOf(i));
+                tableRow.put("tendererNo:序号", String.valueOf(i));
             } else {
                 Assert.fail(String.format("文件：%s，基础信息表，序号有误！", docxName));
             }
-            tableRow.put("tendererName", table.getRow(i).getCell(1).getText());
-            tableRow.put("amount", table.getRow(i).getCell(2).getText());
+            tableRow.put("tendererName:单位名称", table.getRow(i).getCell(1).getText());
+            tableRow.put("amount:总报价（元）", table.getRow(i).getCell(2).getText());
             basicInfoTable.add(tableRow);
         }
-        basicInfo.put("basicInfoTable", basicInfoTable);
+        basicInfo.put("basicInfoTable:标书情况统计表", basicInfoTable);
 
         return basicInfo;
     }

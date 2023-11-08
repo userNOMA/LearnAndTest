@@ -9,8 +9,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.parser.Feature;
 import org.example.utils.bs_JsonShadow;
 import org.example.utils.bs_JacksonHelper;
 
@@ -26,7 +28,7 @@ public class TestReadJsonForReport {
         String testJsonPath = "WorkResearch/src/main/resources/work/TestReadJsonForReport.json";
         JSONObject jsonRead;
         try (InputStream is = new FileInputStream(testJsonPath)) {
-            jsonRead = JSONObject.parseObject(is, JSONObject.class);
+            jsonRead = JSONObject.parseObject(is, JSONObject.class, Feature.OrderedField);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -87,7 +89,7 @@ public class TestReadJsonForReport {
                 for (int j = 0; j < tenderInfos.size(); j++) {
                     LinkedHashMap<String, String> infoRow = tenderInfos.get(j);
                     tenderId.add(infoRow.get("prop"));
-                    tenderId.add(tenderInfos.get(j).get("label").toString());
+                    tenderName.add(tenderInfos.get(j).get("label").toString());
                     if (!"0".equals(rowData.get(infoRow.get("prop")))) {
                         differenceTendererCount++;
                     }
@@ -175,10 +177,60 @@ public class TestReadJsonForReport {
         matchCheck.put("machCheckTable:符合性统计表", machCheckTable);
 
         // 从软硬件详情读取软硬件信息
-        // 将所有的锁号和相同的投标文件名拿出来，
+        // 将所有的锁号和相同的投标文件名拿出来
+        List<String> tendererList = new ArrayList<>();
+        for (int i = 0; i < hardwareDetail.size(); i++) {
+            LinkedHashMap<String, Object> tender = hardwareDetail.get(i);
+            tendererList.add(tender.get("tenderer").toString());
+        }
+        List<LinkedHashMap<String, Object>> sameDogTenderer = new ArrayList<>();
+        for (int i = 0; i < hardwareDetail.size(); i++) {
+            List<LinkedHashMap<String, Object>> dogTender = (List<LinkedHashMap<String, Object>>) hardwareDetail.get(i).get("dogInfoVOS");
+            for (int j = 0; j < dogTender.size(); j++) {
+                List<String> tender = (List<String>) dogTender.get(j).get("tenderer");
+                tender.add(hardwareDetail.get(i).get("tenderer").toString());
+                List<String> tenderSorted = tendererList.stream().filter(e -> tender.contains(e)).collect(Collectors.toList());
+                LinkedHashMap<String, Object> tab = new LinkedHashMap<>();
+                if (tenderSorted.size() > 1) {
+                    tab.put("dogInfoVOS:相同加密锁号",dogTender.get(j).get("dogId").toString());
+                    tab.put("tendererName:对应的投标单位",String.join("；",tenderSorted));
+                    sameDogTenderer.add(tab);
+                }
+            }
+        }
+        for (int i = 0; i < hardwareDetail.size(); i++) {
+            List<LinkedHashMap<String, Object>> addrTender = (List<LinkedHashMap<String, Object>>) hardwareDetail.get(i).get("macAddrVOS");
+            for (int j = 0; j < addrTender.size(); j++) {
+                List<String> tender = (List<String>) addrTender.get(j).get("tenderer");
+                tender.add(hardwareDetail.get(i).get("tenderer").toString());
+                List<String> tenderSorted = tendererList.stream().filter(e -> tender.contains(e)).collect(Collectors.toList());
+                LinkedHashMap<String, Object> tab = new LinkedHashMap<>();
+                if (tenderSorted.size() > 1) {
+                    tab.put("addInfoVOS:相同MAC物理地址",addrTender.get(j).get("macAddr").toString());
+                    tab.put("tendererName:对应的投标单位",String.join("；",tenderSorted));
+                    sameDogTenderer.add(tab);
+                }
+            }
+        }
+        List<LinkedHashMap<String, Object>> hardwareCheckList = sameDogTenderer.stream().distinct().collect(Collectors.toList());
+        matchCheck.put("hardwareCheckList:软硬件信息检查结论",hardwareCheckList);
+        List<LinkedHashMap<String, Object>> hardwareCheckTable = new ArrayList<>();
+        for (int i = 0; i < hardwareDetail.size(); i++) {
+            List<LinkedHashMap<String, Object>> dogTender = (List<LinkedHashMap<String, Object>>) hardwareDetail.get(i).get("dogInfoVOS");
+            List<LinkedHashMap<String, Object>> addrTender = (List<LinkedHashMap<String, Object>>) hardwareDetail.get(i).get("macAddrVOS");
+            LinkedHashMap<String, Object> tableRow = new LinkedHashMap<>();
+            tableRow.put("tendererNo:序号",String.valueOf(i+1));
+            tableRow.put("tendererName:单位名称", hardwareDetail.get(i).get("tenderer"));
+            List<String> dogTenderSorted = dogTender.stream().map(m -> m.get("dogId").toString()).collect(Collectors.toList());
+            tableRow.put("dogInfoVOS:加密锁号", String.join("；", dogTenderSorted));
+            List<String> addrTenderSorted = addrTender.stream().map(m -> m.get("macAddr").toString()).collect(Collectors.toList());
+            tableRow.put("macAddrVOS:物理地址", String.join("；",addrTenderSorted));
+            hardwareCheckTable.add(tableRow);
+        }
+        System.out.println(hardwareCheckTable);
 
 
-
+        System.out.println(hardwareCheckList);
 
         reportJson.put("basicInfo:清标信息", basicInfo);
         reportJson.put("matchCheckResult:符合性检查结果", matchCheck);

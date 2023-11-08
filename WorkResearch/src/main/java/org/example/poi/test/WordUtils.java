@@ -107,8 +107,11 @@ public class WordUtils {
         int paragraphCount = attachmentPointer - hardwarePointer;
 
         String regex = "其中投标单位（(.*?)）电子版投标文件出现相同加密锁的信息（(.*?)）。";
+        String regex2 = "其中投标单位（(.*?)）电子版投标文件出现相同电脑的信息（(.*?)）。";
         Pattern pattern = Pattern.compile(regex);
+        Pattern pattern2 = Pattern.compile(regex2);
         Matcher matcher;
+        Matcher matcher2;
         List<LinkedHashMap<String, String>> hardwareCheckList = new ArrayList<>();
         for (int i = 0; i < paragraphCount - 3; i++) {
             if ("".equals(paragraphs.get(hardwarePointer + i).getText())) {
@@ -119,6 +122,13 @@ public class WordUtils {
             if (matcher.find()) {
                 tab.put("dogInfoVOS:相同加密锁号",matcher.group(2));
                 tab.put("tendererName:对应的投标单位",matcher.group(1));
+            }
+            else {
+                matcher2 = pattern2.matcher(paragraphs.get(hardwarePointer + i).getText());
+                if (matcher2.find()) {
+                    tab.put("addInfoVOS:相同AMC物理地址",matcher2.group(2));
+                    tab.put("tendererName:对应的投标单位",matcher2.group(1));
+                }
             }
             hardwareCheckList.add(tab);
         }

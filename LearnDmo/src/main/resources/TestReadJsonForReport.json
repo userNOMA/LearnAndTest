@@ -1,0 +1,716 @@
+{
+  "tenderInfoList": [
+    {
+      "id": "1722218436138979328",
+      "bidSegId": 8859,
+      "bidSegName": null,
+      "fileName": "TB1山东工程.GBQ6",
+      "fileSize": "2218075",
+      "isTender": "1",
+      "tendereeId": null,
+      "version": null,
+      "tenderer": "001",
+      "projectManager": "航司",
+      "amount": 4239637.67,
+      "space": 3333.00,
+      "modifySpace": null,
+      "fileType": "GBQ6",
+      "filePath": "",
+      "tenderType": "Tenderer",
+      "isImportSuccess": 1,
+      "errorMessage": "解析成功",
+      "sort": 1,
+      "createTime": "2023-11-08T19:44:07",
+      "createBy": null,
+      "checkCode": null,
+      "isMultiRound": null,
+      "validBidRound": 1,
+      "relatedTenderId": null
+    },
+    {
+      "id": "1722218439762857984",
+      "bidSegId": 8859,
+      "bidSegName": null,
+      "fileName": "TB3山东工程 - 全错.GBQ6",
+      "fileSize": "2480285",
+      "isTender": "1",
+      "tendereeId": null,
+      "version": null,
+      "tenderer": "003",
+      "projectManager": "灯芯",
+      "amount": 5995015.81,
+      "space": null,
+      "modifySpace": null,
+      "fileType": "GBQ6",
+      "filePath": "",
+      "tenderType": "Tenderer",
+      "isImportSuccess": 1,
+      "errorMessage": "解析成功",
+      "sort": 2,
+      "createTime": "2023-11-08T19:44:08",
+      "createBy": null,
+      "checkCode": null,
+      "isMultiRound": null,
+      "validBidRound": 1,
+      "relatedTenderId": null
+    }
+  ],
+  "clearResult": {
+    "tableData": [
+      {
+        "1722218436138979328": 2,
+        "1722218439762857984": 197,
+        "checkItem": "符合性检查",
+        "pid": -1,
+        "id": -2,
+        "checkItemCode": "MatchCheck"
+      },
+      {
+        "sequence": "1008",
+        "1722218436138979328": 0,
+        "1722218439762857984": 4,
+        "checkItem": "专业工程暂估价",
+        "pid": -2,
+        "id": 663222,
+        "checkItemCode": "MatchProjectProvisional01"
+      },
+      {
+        "sequence": "1003",
+        "1722218436138979328": 2,
+        "1722218439762857984": 12,
+        "checkItem": "分部分项工程量清单",
+        "pid": -2,
+        "id": 663218,
+        "checkItemCode": "MatchBqItem01"
+      },
+      {
+        "sequence": "1002",
+        "1722218436138979328": 0,
+        "1722218439762857984": 4,
+        "checkItem": "分部分项工程",
+        "pid": -2,
+        "id": 663217,
+        "checkItemCode": "MatchBqTitle01"
+      },
+      {
+        "sequence": "1004",
+        "1722218436138979328": 0,
+        "1722218439762857984": 8,
+        "checkItem": "措施项目清单一",
+        "pid": -2,
+        "id": 663224,
+        "checkItemCode": "MatchMeasureItem01"
+      },
+      {
+        "sequence": "1011",
+        "1722218436138979328": 0,
+        "1722218439762857984": 8,
+        "checkItem": "材料暂估价",
+        "pid": -2,
+        "id": 663223,
+        "checkItemCode": "MatchInterimPrice01"
+      },
+      {
+        "sequence": "1010",
+        "1722218436138979328": 0,
+        "1722218439762857984": 3,
+        "checkItem": "总承包服务费",
+        "pid": -2,
+        "id": 663221,
+        "checkItemCode": "MatchOverallServiceCost01"
+      },
+      {
+        "sequence": "1009",
+        "1722218436138979328": 0,
+        "1722218439762857984": 14,
+        "checkItem": "计日工",
+        "pid": -2,
+        "id": 663220,
+        "checkItemCode": "MatchDayWorkItem01"
+      },
+      {
+        "sequence": "1005",
+        "1722218436138979328": 0,
+        "1722218439762857984": 5,
+        "checkItem": "措施项目清单二",
+        "pid": -2,
+        "id": 663219,
+        "checkItemCode": "MatchMeasureItem02"
+      },
+      {
+        "sequence": "1001",
+        "1722218436138979328": 0,
+        "1722218439762857984": 131,
+        "checkItem": "单位工程费汇总表",
+        "pid": -2,
+        "id": 663215,
+        "checkItemCode": "MatchSummary01"
+      },
+      {
+        "sequence": "1007",
+        "1722218436138979328": 0,
+        "1722218439762857984": 8,
+        "checkItem": "暂列金额",
+        "pid": -2,
+        "id": 663216,
+        "checkItemCode": "MatchProvisionalCost01"
+      },
+      {
+        "1722218436138979328": 11,
+        "1722218439762857984": 17,
+        "checkItem": "计算性检查",
+        "pid": -1,
+        "id": -3,
+        "checkItemCode": "CalcCheck"
+      },
+      {
+        "sequence": "1002",
+        "1722218436138979328": 11,
+        "1722218439762857984": 17,
+        "checkItem": "单价为0或负",
+        "pid": -3,
+        "id": 663225,
+        "checkItemCode": "CalcZeroNegativeExprs01"
+      },
+      {
+        "sequence": "1003",
+        "1722218436138979328": 0,
+        "1722218439762857984": 0,
+        "checkItem": "合价≠单价*数量",
+        "pid": -3,
+        "id": 663226,
+        "checkItemCode": "CalcAmountRateQuantityExprs01"
+      },
+      {
+        "1722218436138979328": 0,
+        "1722218439762857984": 0,
+        "checkItem": "软硬件信息检查",
+        "pid": -1,
+        "id": -4,
+        "checkItemCode": "HardwareCheck"
+      },
+      {
+        "sequence": null,
+        "1722218436138979328": 0,
+        "1722218439762857984": 0,
+        "checkItem": "Mac地址信息",
+        "pid": -4,
+        "id": 1722220119027961857,
+        "checkItemCode": "macAddrRepeate"
+      },
+      {
+        "sequence": null,
+        "1722218436138979328": 0,
+        "1722218439762857984": 0,
+        "checkItem": "锁号信息",
+        "pid": -4,
+        "id": 1722220119027961856,
+        "checkItemCode": "lockRepeate"
+      },
+      {
+        "1722218436138979328": 1,
+        "1722218439762857984": 1,
+        "checkItem": "规律性报价分析",
+        "pid": -1,
+        "id": -6,
+        "checkItemCode": "RegularCheck"
+      },
+      {
+        "sequence": "001",
+        "1722218436138979328": 1,
+        "1722218439762857984": 1,
+        "checkItem": "清单单价规律性",
+        "pid": -6,
+        "id": 1722220119078293504,
+        "checkItemCode": "bqItemRegularity"
+      },
+      {
+        "1722218436138979328": 5,
+        "1722218439762857984": 6,
+        "checkItem": "不平衡报价分析",
+        "pid": -1,
+        "id": -5,
+        "checkItemCode": "UnBalanceCheck"
+      },
+      {
+        "sequence": "8001",
+        "1722218436138979328": "0#3",
+        "1722218439762857984": "3#0",
+        "checkItem": "单价措施",
+        "pid": -5,
+        "id": 663265,
+        "checkItemCode": "MeasureItem02"
+      },
+      {
+        "sequence": "5001",
+        "1722218436138979328": "2#6",
+        "1722218439762857984": "6#2",
+        "checkItem": "分部分项清单单价",
+        "pid": -5,
+        "id": 663259,
+        "checkItemCode": "BqItem01"
+      },
+      {
+        "sequence": "4001",
+        "1722218436138979328": "0#1",
+        "1722218439762857984": "1#0",
+        "checkItem": "分部分项工程总价",
+        "pid": -5,
+        "id": 663257,
+        "checkItemCode": "BqTitle01"
+      },
+      {
+        "sequence": "7001",
+        "1722218436138979328": "2#6",
+        "1722218439762857984": "6#2",
+        "checkItem": "总价措施",
+        "pid": -5,
+        "id": 663263,
+        "checkItemCode": "MeasureItem01"
+      },
+      {
+        "sequence": "1001",
+        "1722218436138979328": "0#0",
+        "1722218439762857984": "0#0",
+        "checkItem": "投标总价",
+        "pid": -5,
+        "id": 663253,
+        "checkItemCode": "TenderInfo01"
+      },
+      {
+        "sequence": "5002",
+        "1722218436138979328": "1#0",
+        "1722218439762857984": "2#0",
+        "checkItem": "相同清单不同单价",
+        "pid": -5,
+        "id": 663261,
+        "checkItemCode": "BqItem02"
+      },
+      {
+        "sequence": "3002",
+        "1722218436138979328": "0#0",
+        "1722218439762857984": "0#4",
+        "checkItem": "取费费率",
+        "pid": -5,
+        "id": 663255,
+        "checkItemCode": "CostRatio01"
+      }
+    ],
+    "tenderInfos": [
+      {
+        "prop": "1722218436138979328",
+        "label": "001",
+        "validBidRound": "1"
+      },
+      {
+        "prop": "1722218439762857984",
+        "label": "003",
+        "validBidRound": "1"
+      }
+    ],
+    "resultReport": {
+      "createTime": 1699443800000,
+      "bidsegName": "山东工程",
+      "tendererCount": 2,
+      "validBidRound": 1
+    },
+    "checkResult": {
+      "exceptionFiles": 2,
+      "exceptionCount": 240,
+      "totalCheckCount": 22
+    }
+  },
+  "hardwareDetail": [
+    {
+      "id": "1722218244392177664",
+      "tenderType": "Tenderee",
+      "tenderer": "招标清单",
+      "amount": "4239637.67",
+      "showSameTenderee": true,
+      "dogInfoVOS": [
+        {
+          "dogId": "ZZ320613534",
+          "tenderer": [
+            "001",
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320379865",
+          "tenderer": [
+            "001",
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320379863",
+          "tenderer": [
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320796230",
+          "tenderer": [
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320796232",
+          "tenderer": [
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320403061",
+          "tenderer": []
+        },
+        {
+          "dogId": "ZZ2601368",
+          "tenderer": [
+            "001",
+            "003"
+          ]
+        }
+      ],
+      "macAddrVOS": [
+        {
+          "macAddr": "B4-2E-99-77-07-51",
+          "tenderer": [
+            "001",
+            "003"
+          ]
+        },
+        {
+          "macAddr": "FC-AA-14-A2-BE-34",
+          "tenderer": [
+            "003"
+          ]
+        },
+        {
+          "macAddr": "B0-83-FE-6F-A8-FC",
+          "tenderer": [
+            "003"
+          ]
+        },
+        {
+          "macAddr": "1C-6F-65-EF-B0-05",
+          "tenderer": [
+            "001",
+            "003"
+          ]
+        }
+      ],
+      "validBidRound": 1
+    },
+    {
+      "id": "1722218436138979328",
+      "tenderType": "Tenderer",
+      "tenderer": "001",
+      "amount": "4239637.67",
+      "showSameTenderee": true,
+      "dogInfoVOS": [
+        {
+          "dogId": "ZZ320613534",
+          "tenderer": [
+            "招标清单",
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ320379865",
+          "tenderer": [
+            "招标清单",
+            "003"
+          ]
+        },
+        {
+          "dogId": "ZZ2601368",
+          "tenderer": [
+            "招标清单",
+            "003"
+          ]
+        }
+      ],
+      "macAddrVOS": [
+        {
+          "macAddr": "B4-2E-99-77-07-51",
+          "tenderer": [
+            "招标清单",
+            "003"
+          ]
+        },
+        {
+          "macAddr": "1C-6F-65-EF-B0-05",
+          "tenderer": [
+            "招标清单",
+            "003"
+          ]
+        }
+      ],
+      "validBidRound": 1
+    },
+    {
+      "id": "1722218439762857984",
+      "tenderType": "Tenderer",
+      "tenderer": "003",
+      "amount": "5995015.81",
+      "showSameTenderee": true,
+      "dogInfoVOS": [
+        {
+          "dogId": "ZZ320613534",
+          "tenderer": [
+            "招标清单",
+            "001"
+          ]
+        },
+        {
+          "dogId": "ZZ320379865",
+          "tenderer": [
+            "招标清单",
+            "001"
+          ]
+        },
+        {
+          "dogId": "ZZ320379863",
+          "tenderer": [
+            "招标清单"
+          ]
+        },
+        {
+          "dogId": "ZZ320796232",
+          "tenderer": [
+            "招标清单"
+          ]
+        },
+        {
+          "dogId": "ZZ320796230",
+          "tenderer": [
+            "招标清单"
+          ]
+        },
+        {
+          "dogId": "ZZ2601368",
+          "tenderer": [
+            "招标清单",
+            "001"
+          ]
+        }
+      ],
+      "macAddrVOS": [
+        {
+          "macAddr": "B4-2E-99-77-07-51",
+          "tenderer": [
+            "招标清单",
+            "001"
+          ]
+        },
+        {
+          "macAddr": "FC-AA-14-A2-BE-34",
+          "tenderer": [
+            "招标清单"
+          ]
+        },
+        {
+          "macAddr": "B0-83-FE-6F-A8-FC",
+          "tenderer": [
+            "招标清单"
+          ]
+        },
+        {
+          "macAddr": "1C-6F-65-EF-B0-05",
+          "tenderer": [
+            "招标清单",
+            "001"
+          ]
+        }
+      ],
+      "validBidRound": 1
+    }
+  ],
+  "matchResult": {
+    "1722218436138979328": {
+      "addItemCount": 0,
+      "deleteItemCount": 0,
+      "errorItemCount": 2,
+      "totalCount": 2
+    },
+    "1722218439762857984": {
+      "addItemCount": 74,
+      "deleteItemCount": 69,
+      "errorItemCount": 54,
+      "totalCount": 197
+    }
+  },
+  "reportMenu": [
+    {
+      "pid": "-1",
+      "id": "-2",
+      "isParent": "true",
+      "moduleName": "清标结果汇总",
+      "checkItem": "清标结果汇总",
+      "checkItemCode": "ValidBidSummary",
+      "selectedFlag": "0",
+      "sequence": "0001",
+      "data": null
+    },
+    {
+      "pid": "-2",
+      "id": "-4",
+      "isParent": "false",
+      "moduleName": "清标结果汇总",
+      "checkItem": "清标结果汇总",
+      "checkItemCode": "ValidBidResultSummary",
+      "selectedFlag": "0",
+      "sequence": "0003",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":372,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":372,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'清标结果汇总表'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":372,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":3,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'检查结果：共涉及'+{totalCheckCount}+'项检查，异常投标文件'+{exceptionFiles}+'个，异常数量'+{exceptionCount}+'个。'\",\"autoMergeSameContent\":false},{\"row\":3,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":3,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":4,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'不平衡报价分析规则：基准价：'+{baseAmoutTypeDesc}+'；偏差范围：【过高】差额率≥'+{highValue}+'%，【过低】差额率≤'+{lowValue}+'%；'\",\"autoMergeSameContent\":false},{\"row\":4,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":4,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#CCCCCC\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"清标结果汇总\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":164,\"autoHide\":false},{\"width\":660,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'检查项'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":164,\"autoHide\":false},{\"width\":660,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[checkItem]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":164,\"autoHide\":false},{\"width\":660,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":164,\"autoHide\":false},{\"width\":660,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":164,\"autoHide\":false},{\"width\":660,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":371,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "清标结果汇总"
+      }
+    },
+    {
+      "pid": "-1",
+      "id": "-5",
+      "isParent": "true",
+      "moduleName": "符合性检查",
+      "checkItem": "符合性检查",
+      "checkItemCode": "MatchCheck",
+      "selectedFlag": "0",
+      "sequence": "1000",
+      "data": null
+    },
+    {
+      "pid": "-5",
+      "id": "-8",
+      "isParent": "false",
+      "moduleName": "符合性检查",
+      "checkItem": "分部分项工程量清单",
+      "checkItemCode": "MatchBqItem01",
+      "selectedFlag": "0",
+      "sequence": "1003",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'符合性检查-分部分项工程量清单'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"分部分项清单\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "分部分项工程量清单"
+      }
+    },
+    {
+      "pid": "-5",
+      "id": "-10",
+      "isParent": "false",
+      "moduleName": "符合性检查",
+      "checkItem": "单价措施",
+      "checkItemCode": "MatchMeasureItem02",
+      "selectedFlag": "0",
+      "sequence": "1005",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'符合性检查-单价措施'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"单价措施\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "单价措施"
+      }
+    },
+    {
+      "pid": "-5",
+      "id": "-29",
+      "isParent": "false",
+      "moduleName": "符合性检查",
+      "checkItem": "暂列金额",
+      "checkItemCode": "MatchProvisionalCost01",
+      "selectedFlag": "0",
+      "sequence": "1006",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'符合性检查-暂列金额'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"暂列金额\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "暂列金额"
+      }
+    },
+    {
+      "pid": "-5",
+      "id": "-30",
+      "isParent": "false",
+      "moduleName": "符合性检查",
+      "checkItem": "专业工程暂估价",
+      "checkItemCode": "MatchProjectProvisional01",
+      "selectedFlag": "0",
+      "sequence": "1007",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'符合性检查-专业工程暂估价'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"专业工程暂估价\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "专业工程暂估价"
+      }
+    },
+    {
+      "pid": "-5",
+      "id": "-31",
+      "isParent": "false",
+      "moduleName": "符合性检查",
+      "checkItem": "材料暂估价",
+      "checkItemCode": "MatchInterimPrice01",
+      "selectedFlag": "0",
+      "sequence": "1008",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'符合性检查-材料暂估价'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"材料暂估价\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "材料暂估价"
+      }
+    },
+    {
+      "pid": "-1",
+      "id": "-11",
+      "isParent": "true",
+      "moduleName": "计算性检查",
+      "checkItem": "计算性检查",
+      "checkItemCode": "CalcCheck",
+      "selectedFlag": "0",
+      "sequence": "2000",
+      "data": null
+    },
+    {
+      "pid": "-11",
+      "id": "-13",
+      "isParent": "false",
+      "moduleName": "计算性检查",
+      "checkItem": "单价为0或负",
+      "checkItemCode": "CalcZeroNegativeExprs01",
+      "selectedFlag": "0",
+      "sequence": "2002",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'计算性检查-单价为0或负'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"单价为0或负\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "单价为0或负"
+      }
+    },
+    {
+      "pid": "-11",
+      "id": "-14",
+      "isParent": "false",
+      "moduleName": "计算性检查",
+      "checkItem": "合价≠单价x数量",
+      "checkItemCode": "CalcAmountRateQuantityExprs01",
+      "selectedFlag": "0",
+      "sequence": "2003",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":false},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":408,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":408,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'计算性检查-合价≠单价×数量'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":408,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"合计≠单价*数量\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":627,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":627,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":627,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":627,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":627,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":404,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "合价≠单价x数量"
+      }
+    },
+    {
+      "pid": "-1",
+      "id": "-15",
+      "isParent": "true",
+      "moduleName": "软硬件检查",
+      "checkItem": "软硬件检查",
+      "checkItemCode": "HardwareCheck",
+      "selectedFlag": "0",
+      "sequence": "3000",
+      "data": null
+    },
+    {
+      "pid": "-15",
+      "id": "-16",
+      "isParent": "false",
+      "moduleName": "软硬件检查",
+      "checkItem": "软硬件检查",
+      "checkItemCode": "HardwareCheckResult",
+      "selectedFlag": "1",
+      "sequence": "3001",
+      "data": {
+        "data": "{\"name\":\"\",\"version\":2,\"type\":\"vertical-body\",\"properties\":{\"createTime\":\"\",\"company\":\"\",\"author\":\"\"},\"pageSetting\":{\"orientation\":\"vertical\",\"pageMarginLeft\":1.5,\"pageMarginRight\":1.5,\"pageMarginTop\":1.5,\"pageMarginBottom\":1.5,\"paperType\":\"A4\",\"paperWidth\":21,\"paperHeight\":29.7,\"isUnlimitedPaperSize\":true},\"watermark\":{\"enable\":true,\"text\":\"\",\"color\":\"#999999\",\"transparency\":50,\"fontFamily\":\"Microsoft YaHei\",\"angle\":45,\"fontSize\":\"24pt\"},\"option\":{\"bodyTopLine\":{\"width\":2,\"color\":\"black\"},\"bodyLeftLine\":{\"width\":2,\"color\":\"black\"},\"bodyReightLine\":{\"width\":2,\"color\":\"black\"},\"bodyBottomLine\":{\"width\":2,\"color\":\"black\"},\"fillWithBlankRow\":false,\"noOverPageDisplay\":true},\"header\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"title\":{\"visible\":true,\"rows\":[{\"_height\":68}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"20pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'软硬件检查-软硬件检查'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"tableHeader\":{\"visible\":true,\"rows\":[{\"_height\":23},{\"_height\":23},{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":457,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":2},\"data\":\"'标段名称：'+{bidsegName}\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":\"'第  ' + {页数} + '  页'+'  '+'共  ' + {总页数} + '  页'\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'投标单位家数：'+{tendererCount}\",\"autoMergeSameContent\":false},{\"row\":1,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":1,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"merge\":{\"rowspan\":1,\"colspan\":3},\"data\":\"'创建时间：'+{createTime}\",\"autoMergeSameContent\":false},{\"row\":2,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false},{\"row\":2,\"col\":2,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"right\",\"verticalAlign\":\"top\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"data\":null,\"autoMergeSameContent\":false}]},\"body\":{\"details\":{\"dataSourceName\":\"\",\"title\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"dataArea\":{\"visible\":true,\"rows\":[],\"columns\":[],\"cells\":[]},\"footer\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"pageStat\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"total\":{\"visible\":false,\"rows\":[],\"columns\":[],\"cells\":[]},\"_options\":[],\"_children\":[{\"dataSourceName\":\"软硬件检查\",\"title\":{\"visible\":true,\"rows\":[{\"_height\":28}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"'序号'\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000000\",\"background\":\"#EAEAEA\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"bold\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"<xmhfDetail,label>\",\"autoMergeSameContent\":false}]},\"dataArea\":{\"visible\":true,\"rows\":[{\"_height\":25}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"left\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[indexCode]\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"style\":{\"color\":\"#000\",\"background\":\"#FFFFFF\",\"fontFamily\":\"Microsoft YaHei\",\"textAlign\":\"center\",\"verticalAlign\":\"middle\",\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"fontSize\":\"9pt\",\"textDecoration\":\"none\"},\"border\":{\"left\":{\"width\":1,\"color\":\"#000\"},\"right\":{\"width\":1,\"color\":\"#000\"},\"top\":{\"width\":1,\"color\":\"#000\"},\"bottom\":{\"width\":1,\"color\":\"#000\"}},\"data\":\"[xmhfDetail,value]\",\"autoMergeSameContent\":false}]},\"footer\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"pageStat\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"total\":{\"visible\":false,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":229,\"autoHide\":false},{\"width\":681,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false}]},\"_options\":[],\"_children\":[],\"settings\":{\"newPagePerRecord\":false}}],\"settings\":{\"newPagePerRecord\":false}}},\"footer\":{\"visible\":true,\"rows\":[{\"_height\":23}],\"columns\":[{\"width\":227,\"autoHide\":false},{\"width\":227,\"autoHide\":false},{\"width\":429,\"autoHide\":false}],\"cells\":[{\"row\":0,\"col\":0,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":1,\"data\":\"\",\"autoMergeSameContent\":false},{\"row\":0,\"col\":2,\"data\":\"\",\"autoMergeSameContent\":false}]},\"macros\":[]}",
+        "name": "软硬件检查"
+      }
+    }
+  ]
+}

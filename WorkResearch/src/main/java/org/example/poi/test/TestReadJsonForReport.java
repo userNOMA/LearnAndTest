@@ -11,6 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.parser.Feature;
 import org.example.utils.bs_JsonShadow;
@@ -39,9 +40,23 @@ public class TestReadJsonForReport {
         List<LinkedHashMap> hardwareDetail = (List) apiResult.get("hardwareDetail");
         List<LinkedHashMap> reportMenu = (List) apiResult.get("reportMenu");
 
-        readJsonForReport(tenderInfoList, clearResult, matchResult, reportMenu, hardwareDetail);
+        LinkedHashMap<String, Object> result = readJsonForReport(tenderInfoList, clearResult, matchResult, reportMenu, hardwareDetail);
+        System.out.println(JSON.toJSONString(result));
+
+
     }
 
+    /**
+     * @description: 将从不同接口读取的信息拼装成docx解析的结构
+     * @Param tenderInfoList: 投标信息接口
+     * @Param clearResult: 清标解雇汇总接口
+     * @Param matchResult: 符合性详情接口
+     * @Param reportMenu: 清标报告菜单接口
+     * @Param hardwareDetail: 软硬件信息详情接口
+     * @return: java.util.LinkedHashMap<java.lang.String,java.lang.Object> 拼装后的结构
+     * @author zhouxs-a
+     * @date 2023/11/9 23:33
+     */
     public static LinkedHashMap<String, Object> readJsonForReport(List<LinkedHashMap> tenderInfoList,
                                                                   LinkedHashMap<String, Object> clearResult,
                                                                   LinkedHashMap<String, Object> matchResult,
@@ -60,13 +75,13 @@ public class TestReadJsonForReport {
             tableRow.put("amount:总报价（元）", decimalFormat.format(tenderInfoList.get(i).get("amount")));
             basicInfoTable.add(tableRow);
         }
-        reportJson.put("basicInfoTable:标书情况统计表", basicInfoTable);
+        basicInfo.put("basicInfoTable:标书情况统计表", basicInfoTable);
 
         // 从清标结果汇总中读取信息
         LinkedHashMap<String, Object> matchCheck = new LinkedHashMap<>();
         LinkedHashMap<String, Object> calcCheck = new LinkedHashMap<>();
         LinkedHashMap<String, Object> hardwareCheck = new LinkedHashMap<>();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日HH时mm分");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy年M月d日H时m分");
         LinkedHashMap<String, Object> resultReport = (LinkedHashMap) clearResult.get("resultReport");
         basicInfo.put("tendererCount:标书数量", resultReport.get("tendererCount"));
         basicInfo.put("name:项目名称", resultReport.get("bidsegName"));
@@ -139,7 +154,7 @@ public class TestReadJsonForReport {
                     attachment.put("attachmentName:附件名称", "清标结果_符合性检查结果_" + menu.get("checkItem") +"表");
                 }
                 attachmentList.add(attachment);
-                attachmentListAll.add(attachment);
+                attachmentListAll.add((LinkedHashMap<String, String>) attachment.clone());
             }
         }
         matchCheck.put("attachmentList:符合性附件", attachmentList);
@@ -157,7 +172,7 @@ public class TestReadJsonForReport {
                     attachment.put("attachmentName:附件名称", "清标结果_计算性检查结果_" + menu.get("checkItem"));
                 }
                 attachmentList.add(attachment);
-                attachmentListAll.add(attachment);
+                attachmentListAll.add((LinkedHashMap<String, String>) attachment.clone());
             }
         }
         calcCheck.put("attachmentList:计算性附件", attachmentList);
@@ -227,17 +242,11 @@ public class TestReadJsonForReport {
             tableRow.put("macAddrVOS:物理地址", String.join("；",addrTenderSorted));
             hardwareCheckTable.add(tableRow);
         }
-        System.out.println(hardwareCheckTable);
-
-
-        System.out.println(hardwareCheckList);
 
         reportJson.put("basicInfo:清标信息", basicInfo);
         reportJson.put("matchCheckResult:符合性检查结果", matchCheck);
         reportJson.put("calcCheckResult:计算性检查结果", calcCheck);
         reportJson.put("attachment:附件", attachmentListAll);
-        // 从投标列表中解析以下结果
-        System.out.println(reportJson);
 
         return reportJson;
     }

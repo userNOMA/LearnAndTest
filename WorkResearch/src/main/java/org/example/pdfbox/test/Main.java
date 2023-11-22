@@ -13,5 +13,6 @@ public class Main {
     public static void main(String[] args) {
         byte[] decodedBytes = Base64.getDecoder().decode("gZVEbo024y5Pw40qoF+Rw+hOpMYpssw==");
         String decodedString = new String(decodedBytes);
+        System.out.println(decodedString);
     }
 }

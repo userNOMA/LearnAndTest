@@ -13,11 +13,5 @@
         <module name="JavaCore" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaCore" target="1.5" />
-      <module name="LearnDmo" target="9" />
-      <module name="NatDayDemo" target="11" />
-      <module name="WorkResearch" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

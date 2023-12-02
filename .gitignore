@@ -24,15 +24,13 @@
 hs_err_pid*
 replay_pid*
 
-/WorkResearch/target/classes/simple.docx
-/WorkResearch/target/classes/~$清标报告.docx
-
 #忽略所有.svn目录
 .svn/
 #忽略所有target目录
 target/
 #忽略所有.idea目录
-.idea/
+.idea/*
 #忽略所有.iml文件
 *.iml
 !/.idea/
+/.idea/
